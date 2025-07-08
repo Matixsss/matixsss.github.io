@@ -52,16 +52,16 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/webgl build.loader.js";
+      var loaderUrl = buildUrl + "/matixsss.github.io.loader.js";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/webgl build.data",
-        frameworkUrl: buildUrl + "/webgl build.framework.js",
-        codeUrl: buildUrl + "/webgl build.wasm",
+        dataUrl: buildUrl + "/matixsss.github.io.data",
+        frameworkUrl: buildUrl + "/matixsss.github.io.framework.js",
+        codeUrl: buildUrl + "/matixsss.github.io.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "Lunakos",
         productName: "Idle Game",
-        productVersion: "0.1",
+        productVersion: "0.11",
         showBanner: unityShowBanner,
       };
 
@@ -71,6 +71,15 @@
       // happening inside the engine, and you would instead like to size up
       // the canvas DOM size and WebGL render target sizes yourself.
       // config.matchWebGLToCanvasSize = false;
+
+      // If you would like all file writes inside Unity Application.persistentDataPath
+      // directory to automatically persist so that the contents are remembered when
+      // the user revisits the site the next time, uncomment the following line:
+      // config.autoSyncPersistentDataPath = true;
+      // This autosyncing is currently not the default behavior to avoid regressing
+      // existing user projects that might rely on the earlier manual
+      // JS_FileSystem_Sync() behavior, but in future Unity version, this will be
+      // expected to change.
 
       if (/iPhone|iPad|iPod|Android/i.test(navigator.userAgent)) {
         // Mobile device style: fill the whole browser client area with the game canvas:
